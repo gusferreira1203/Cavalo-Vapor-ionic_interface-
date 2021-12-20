@@ -9,7 +9,7 @@
       <ion-menu content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="inbox-list">
-            <img src="assets/icon/icon2.png">
+            <img src="assets/icon/icon2.png" style="width: 191.8px; height: 107.8px;">
             <ion-list-header>Cavalo-Vapor</ion-list-header>
             <ion-note> </ion-note>
   
@@ -26,7 +26,7 @@
       <ion-router-outlet id="main-content"></ion-router-outlet>
     </IonSplitPane>
       <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-        <ion-fab-button href="suporte">
+        <ion-fab-button color="secondary" href="suporte">
           <ion-icon size="large" :icon="helpOutline"></ion-icon>
         </ion-fab-button>
       </ion-fab>

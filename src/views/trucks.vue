@@ -36,9 +36,10 @@
           </ion-button>
         </div>
 
+        <ion-button expand="block">Novo</ion-button>
         <ion-list>
           <ion-list-header>
-            Seus Caminhões <ion-button slot="end"><ion-icon :icon="information"></ion-icon></ion-button> <ion-button slot="end">Deletar</ion-button>
+            Seus Caminhões
           </ion-list-header>
           <ion-item>
             Optimus Prime <ion-button slot="end"><ion-icon :icon="information"></ion-icon></ion-button> <ion-button slot="end">Deletar</ion-button>
@@ -52,6 +53,10 @@
           <ion-item>
             Furgão do Vô Max <ion-button slot="end"><ion-icon :icon="information"></ion-icon></ion-button> <ion-button slot="end">Deletar</ion-button>
           </ion-item>
+        </ion-list>
+
+        <ion-list>
+        <ion-button expand="block">Novo</ion-button>
           <ion-list-header>
             Suas Carretas
           </ion-list-header>
@@ -72,7 +77,7 @@
 
 <script lang="ts">
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
-import { contrast, helpOutline, information } from 'ionicons/icons';
+import { contrast, helpOutline, information, add } from 'ionicons/icons';
 
 export default {
   name: 'Folder',
@@ -89,7 +94,8 @@ export default {
     return {
       contrast,
       helpOutline,
-      information
+      information,
+      add
     }
   }
 }

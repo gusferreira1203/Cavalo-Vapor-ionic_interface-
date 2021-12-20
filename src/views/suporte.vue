@@ -15,6 +15,19 @@
             <ion-title size="large">Suporte</ion-title>
           </ion-toolbar>
         </ion-header>
+
+        <ion-select placeholder="Motivo do contato">
+          <ion-select-option>Crítica</ion-select-option>
+          <ion-select-option>Sugestão</ion-select-option>
+          <ion-select-option>Comentário</ion-select-option>
+          <ion-select-option>Relatar bug</ion-select-option>
+          <ion-select-option>Contatar o financeiro</ion-select-option>
+          <ion-select-option>Outro</ion-select-option>
+        </ion-select>
+
+        <ion-textarea placeholder="Digite aqui">
+        </ion-textarea>
+
       </ion-content>
     </ion-page>
   </template>

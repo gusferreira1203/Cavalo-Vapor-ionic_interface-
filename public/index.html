@@ -14,17 +14,110 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
 
-    <link rel="shortcut icon" type="image/png" href="<%= BASE_URL %>assets/icon/favicon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="<%= BASE_URL %>assets/icon/favicon.png"
+    />
 
     <!-- add to homescreen for ios -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Ionic App" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "Sales", "Expenses"],
+          ["2004", 1000, 400],
+          ["2005", 1170, 460],
+          ["2006", 660, 1120],
+          ["2007", 1030, 540],
+        ]);
+
+        var options = {
+          title: "Company Performance",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var data2 = google.visualization.arrayToDataTable([
+          ["Year", "Sales", "Expenses"],
+          ["2004", 1000, 400],
+          ["2005", 1170, 460],
+          ["2006", 1111, 1120],
+          ["2007", 1030, 540],
+        ]);
+
+        var options2 = {
+          title: "Company Performance2",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var data3 = google.visualization.arrayToDataTable([
+          ["Year", "Sales", "Expenses"],
+          ["2004", 1000, 400],
+          ["2005", 1170, 460],
+          ["2006", 0, 1120],
+          ["2007", 1030, 540],
+        ]);
+
+        var options3 = {
+          title: "Company Performance3",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var data4 = google.visualization.arrayToDataTable([
+          ["Year", "Sales", "Expenses"],
+          ["2004", 1000, 400],
+          ["2005", 1170, 460],
+          ["2006", 3456, 1120],
+          ["2007", 1030, 540],
+        ]);
+
+        var options4 = {
+          title: "Company Performance4",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart")
+        );
+
+        chart.draw(data, options);
+
+        var chart2 = new google.visualization.LineChart(
+          document.getElementById("curve_chart2")
+        );
+
+        chart2.draw(data2, options2);
+
+        var chart3 = new google.visualization.LineChart(
+          document.getElementById("curve_chart3")
+        );
+
+        chart3.draw(data3, options3);
+
+        var chart4 = new google.visualization.LineChart(
+          document.getElementById("curve_chart4")
+        );
+
+        chart4.draw(data4, options4);
+      }
+    </script>
   </head>
 
   <body>
     <div id="app"></div>
   </body>
-
 </html>
-

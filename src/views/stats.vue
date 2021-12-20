@@ -16,26 +16,30 @@
           </ion-toolbar>
         </ion-header>
 
-        <ion-card><ion-card-header>Gráfico A</ion-card-header><ion-card-content>--------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------</ion-card-content></ion-card>
-        <ion-card><ion-card-header>Gráfico B</ion-card-header><ion-card-content>--------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------</ion-card-content></ion-card>
-        <ion-card><ion-card-header>Gráfico C</ion-card-header><ion-card-content>--------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------</ion-card-content></ion-card>
-        <ion-card><ion-card-header>Gráfico D</ion-card-header><ion-card-content>--------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------
-          --------------------------------------------------</ion-card-content></ion-card>
+        <ion-card>
+          <ion-card-header>Gráfico A</ion-card-header>
+          <ion-card-content>
+            <div id="curve_chart" style="width: auto; height: 50vw"></div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>Gráfico A</ion-card-header>
+          <ion-card-content>
+            <div id="curve_chart2" style="width: auto; height: 50vw"></div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>Gráfico A</ion-card-header>
+          <ion-card-content>
+            <div id="curve_chart3" style="width: auto; height: 50vw"></div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>Gráfico A</ion-card-header>
+          <ion-card-content>
+            <div id="curve_chart4" style="width: auto; height: 50vw"></div>
+          </ion-card-content>
+        </ion-card>
 
         <ion-list>
           <ion-list-header>Sua Atividade</ion-list-header>
